@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Haiku des Moments</title>
+
+<style>
+
+body{
+    background:#f5f5f5;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    margin:20px;
+}
+
+h1{
+    color:#b00000;
+}
+
+img{
+    max-width:95%;
+    max-height:90vh;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+button{
+    margin-top:20px;
+    padding:12px 24px;
+    border:none;
+    background:#b00000;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#800000;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Haiku des Moments</h1>
+
+<img id="haikuBild">
+
+<br>
+
+<button onclick="neuesHaiku()">
+Neues Haiku
+</button>
+
+<script>
+
+const bilder = [
+"Haiku-001.png",
+"Haiku-002.png",
+"Haiku-003.png",
+"Haiku-004.png",
+"Haiku-005.png",
+"Haiku-006.png",
+"Haiku-007.png",
+"Haiku-008.png"
+];
+
+function neuesHaiku(){
+
+const zufall =
+Math.floor(Math.random()*bilder.length);
+
+document.getElementById("haikuBild").src =
+bilder[zufall];
+
+}
+
+neuesHaiku();
+
+</script>
+
+</body>
+</html>
