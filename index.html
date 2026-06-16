@@ -70,7 +70,7 @@ button:hover{
     </a>
 </div>
 
-<img id="haikuBild" alt="Haiku">
+<img id="haikuBild" alt="Haiku" onerror="neuesHaiku()">
 
 <br>
 
@@ -79,12 +79,12 @@ Neues Haiku
 </button>
 
 <div class="info">
-Jeder Aufruf zeigt ein zufällig ausgewähltes Haiku.
+Ein zufälliger Gedanke aus 129 Haiku-Gedichten.
 </div>
 
 <script>
 
-const anzahl = 140;
+const anzahl = 129;
 
 function neuesHaiku(){
 
@@ -92,7 +92,7 @@ function neuesHaiku(){
         Math.floor(Math.random() * anzahl) + 1;
 
     const dateiname =
-        "Haiku-" +
+        "HAIKU" +
         String(zufall).padStart(3,"0") +
         ".png";
 
