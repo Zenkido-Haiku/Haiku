@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Zufälliges Haiku-Gedicht von Pascal Anna (www.zenkido.org)</title>
+<title>Zufalls-Haiku</title>
 
 <style>
 
@@ -17,9 +17,18 @@ body{
     text-align:center;
 }
 
-h1{
-    color:#a00000;
-    margin-bottom:20px;
+.ebooklink{
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+.ebooklink a{
+    color:#666;
+    text-decoration:none;
+}
+
+.ebooklink a:hover{
+    text-decoration:underline;
 }
 
 #haikuBild{
@@ -55,7 +64,11 @@ button:hover{
 
 <body>
 
-<h1>Zufälliges Haiku-Gedicht von Pascal Anna (www.zenkido.org)</h1>
+<div class="ebooklink">
+    <a href="https://www.epubli.de" target="_blank">
+        Zur vollständigen Haiku-Sammlung von Pascal Anna
+    </a>
+</div>
 
 <img id="haikuBild" alt="Haiku">
 
@@ -71,7 +84,7 @@ Jeder Aufruf zeigt ein zufällig ausgewähltes Haiku.
 
 <script>
 
-const anzahl = 19;
+const anzahl = 140;
 
 function neuesHaiku(){
 
